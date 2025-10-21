@@ -1,0 +1,12 @@
+# Cleanup
+# Run as root, of course.
+ 
+cd /var/log
+# Si sposta sulla directory /var/log
+cat /dev/null > messages
+# Svuota il contenuto del file "messages"
+cat /dev/null > wtmp
+# Svuota il contenuto del file "wtmp"
+echo "Log files cleaned up."
+# Ci stampa un messaggio di conferma che l'operazione di pulizia dei file di log è andata a buon fine
+
